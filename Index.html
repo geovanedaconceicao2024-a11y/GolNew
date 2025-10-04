@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futebol RealTime</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <!-- Menu lateral -->
+  <nav id="sidebar">
+    <div class="close-btn" onclick="toggleSidebar()">×</div>
+    <h2>Futebol RealTime</h2>
+    <a href="#">Início</a>
+    <a href="#">Brasileirão</a>
+    <a href="#">Champions</a>
+    <a href="#">Transferências</a>
+    <a href="#">Contato</a>
+    <button id="toggleMode">🌙/☀️</button>
+  </nav>
+
+  <!-- Botão hamburger -->
+  <div id="hamburger" onclick="toggleSidebar()">☰</div>
+
+  <header>
+    <h1>⚽ GolNews </h1>
+    <p>Últimas notícias do mundo da bola</p>
+    <!-- Campo de pesquisa -->
+    <input type="text" id="searchInput" placeholder="Pesquisar notícias..." oninput="filterNews()">
+  </header>
+
+  <main id="news-container">
+    <p>Carregando notícias...</p>
+  </main>
+
+  <footer>
+    <p>© 2025 Futebol RealTime</p>
+  </footer>
+
+  <script src="Script.js"></script>
+</body>
+</html>
